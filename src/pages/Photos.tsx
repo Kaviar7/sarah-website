@@ -3,149 +3,164 @@ import { X, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const propertyPhotos = [
   {
-    url: '/0452fd4c-fc19-440b-a862-af9c5c35aa54.jpg',
-    category: 'Interior',
+    url: '/Bedroom 1.jpg',
+    category: 'Bedroom',
     alt: 'Bedroom One'
   },
   {
-    url: '/0a67748c-6800-47d9-8193-e4e258fde3e6.jpg',
-    category: 'Interior',
+    url: '/Bedroom 2.jpg',
+    category: 'Bedroom',
     alt: 'Bedroom Two'
   },
   {
-    url: '/137cacec-4751-4ef2-a0b5-fd837c612036.jpg',
+    url: '/Bedroom Two.jpg',
+    category: 'Bedroom',
+    alt: 'Bedroom Two Alternate'
+  },
+  {
+    url: '/Bedroom One Sideview.jpg',
+    category: 'Bedroom',
+    alt: 'Bedroom One Side View'
+  },
+  {
+    url: '/Bedroom One view.jpg',
+    category: 'Bedroom',
+    alt: 'Bedroom One View'
+  },
+  {
+    url: '/Bedroom Two Bookshelf.jpg',
+    category: 'Bedroom',
+    alt: 'Bedroom Two Bookshelf'
+  },
+  {
+    url: '/Bunk Beds.jpg',
+    category: 'Bedroom',
+    alt: 'Bunk Beds'
+  },
+  {
+    url: '/Bunk Bed Room.jpg',
+    category: 'Bedroom',
+    alt: 'Bunk Bed Room'
+  },
+  {
+    url: '/Kitchen.jpg',
+    category: 'Interior',
+    alt: 'Kitchen'
+  },
+  {
+    url: '/Kitchen Cabinet.jpg',
+    category: 'Interior',
+    alt: 'Kitchen Cabinet'
+  },
+  {
+    url: '/Kitchen-View.jpg',
+    category: 'Interior',
+    alt: 'Kitchen View'
+  },
+  {
+    url: '/Kitchen-main-view.jpg',
+    category: 'Interior',
+    alt: 'Kitchen Main View'
+  },
+  {
+    url: '/Dining Room.jpg',
+    category: 'Interior',
+    alt: 'Dining Room'
+  },
+  {
+    url: '/Dining Room 1.jpg',
+    category: 'Interior',
+    alt: 'Dining Room View'
+  },
+  {
+    url: '/Living Room.jpg',
+    category: 'Interior',
+    alt: 'Living Room'
+  },
+  {
+    url: '/Living-Room-2.jpg',
+    category: 'Interior',
+    alt: 'Living Room View 2'
+  },
+  {
+    url: '/Living Room 3.jpg',
+    category: 'Interior',
+    alt: 'Living Room View 3'
+  },
+  {
+    url: '/Bathroom.jpg',
     category: 'Interior',
     alt: 'Bathroom'
   },
   {
-    url: '/2072b2c2-a4c3-4986-be70-4554ad7f75bc.jpg',
+    url: '/Bathroom-2.jpg',
     category: 'Interior',
-    alt: 'Bedroom One'
+    alt: 'Bathroom View 2'
   },
   {
-    url: '/22155478-38ce-4605-acf9-53c46185feec.jpg',
+    url: '/Bathroom Laundry.jpg',
     category: 'Interior',
-    alt: 'Porch'
+    alt: 'Bathroom Laundry'
   },
   {
-    url: '/362645d8-131f-44ca-99a1-08427aedc973.jpg',
+    url: '/Screened-porch.jpg',
     category: 'Interior',
-    alt: 'Cabinet'
+    alt: 'Screened Porch'
   },
   {
-    url: '/3d4e181d-d7c2-400f-b664-f52ce6745fb7.jpg',
+    url: '/Internet Cabinet.jpg',
+    category: 'Amenities',
+    alt: 'Internet Cabinet'
+  },
+  {
+    url: '/Golf Cart.jpg',
+    category: 'Amenities',
+    alt: 'Golf Cart'
+  },
+  {
+    url: '/Golf Cart 2.jpg',
+    category: 'Amenities',
+    alt: 'Golf Cart View 2'
+  },
+  {
+    url: '/Golf Cart 3.jpg',
+    category: 'Amenities',
+    alt: 'Golf Cart View 3'
+  },
+  {
+    url: '/Golf Cart 4.jpg',
+    category: 'Amenities',
+    alt: 'Golf Cart View 4'
+  },
+  {
+    url: '/Grill.jpg',
     category: 'Amenities',
     alt: 'Grill'
   },
   {
-    url: '/435d2a2f-4ca2-41f3-abb7-da3db9a67f18.jpg',
-    category: 'Interior',
-    alt: 'Dining Room'
-  },
-  {
-    url: '/51b3ee00-cc3b-4e0f-bc26-df1b45bc0741.jpg',
+    url: '/Board Games.jpg',
     category: 'Amenities',
     alt: 'Board Games'
   },
   {
-    url: '/80ac7c53-7edb-4724-88ea-3b43c3f495f4.jpg',
-    category: 'Bedroom',
-    alt: 'Bedroom Two'
+    url: '/Outdoor Shower.jpg',
+    category: 'Amenities',
+    alt: 'Outdoor Shower'
   },
   {
-    url: '/8202f874-f6e0-417d-aa3b-4690a302e2f0.jpg',
-    category: 'Bedroom',
-    alt: 'Bedroom Two'
-  },
-  {
-    url: '/8295d26a-8d8e-484d-aec3-853012fecafe.jpg',
-    category: 'Interior',
-    alt: 'Kitchen Counters'
-  },
-  {
-    url: '/859d4c9e-1cc1-4b9c-be48-0a14f5c3c6b7.jpg',
-    category: 'Interior',
+    url: '/patio.jpg',
+    category: 'Amenities',
     alt: 'Patio'
   },
   {
-    url: '/8708fcd8-3823-4a99-9d14-0babbb81fd0c.jpg',
-    category: 'Amenities',
-    alt: 'Golf Cart'
+    url: '/Myrtle.png',
+    category: 'Area',
+    alt: 'Myrtle Beach'
   },
   {
-    url: '/915c8d54-9798-47f5-a8aa-2d73e9b8ac70.jpg',
-    category: 'Interior',
-    alt: 'Living Room'
-  },
-  {
-    url: '/92ecde0a-1cee-439a-8e93-7715f31b1063.jpg',
-    category: 'Interior',
-    alt: 'Living Room and Patio'
-  },
-  {
-    url: '/96ff4105-7e63-470a-8510-236819704bb5.jpg',
-    category: 'Interior',
-    alt: 'Internet Setup'
-  },
-  {
-    url: '/9acbfe94-e787-4639-82e5-a19eb363c009.jpg',
-    category: 'Bedroom',
-    alt: 'Bedroom One'
-  },
-  {
-    url: '/a41f4885-1201-4811-a22b-e713f2afff35.jpg',
-    category: 'Interior',
-    alt: 'Living Room'
-  },
-  {
-    url: '/a5127d05-8dc4-491f-a8a9-b77a73ab8a0a.jpg',
-    category: 'Interior',
-    alt: 'Bathroom'
-  },
-  {
-    url: '/a6caf79d-ae62-45e6-b1ae-dce3dc622e56.jpg',
-    category: 'Interior',
-    alt: 'Dining Room'
-  },
-  {
-    url: '/abb4105f-cbad-466a-b8e1-d48f5a3eed78.jpg',
-    category: 'Interior',
-    alt: 'Kitchen'
-  },
-  {
-    url: '/bcd904a5-10d8-49f9-ac79-eab3d981f27f.jpg',
-    category: 'Bedroom',
-    alt: 'Bunk Beds'
-  },
-  {
-    url: '/cb521e60-3809-43b5-b575-bfbdfb1f3278.jpg',
-    category: 'Interior',
-    alt: 'Kitchen'
-  },
-  {
-    url: '/d23a4619-a050-43b1-b65b-b58e233f7869.jpg',
-    category: 'Interior',
-    alt: 'Bunk Beds'
-  },
-  {
-    url: '/d6367351-5b0a-459c-bfd7-578ac64c5980.jpg',
-    category: 'Amenities',
-    alt: 'Golf Cart'
-  },
-  {
-    url: '/f1d2d3f1-d83e-49b5-b1e5-570e3dd59dc3.jpg',
-    category: 'Bathroom',
-    alt: 'Bathroom with Washer Dryer'
-  },
-  {
-    url: '/137cacec-4751-4ef2-a0b5-fd837c612036.jpg',
-    category: 'Bathroom',
-    alt: 'Bathroom'
-  },
-  {
-    url: '/2072b2c2-a4c3-4986-be70-4554ad7f75bc.jpg',
-    category: 'Bedroom',
-    alt: 'Bedroom One'
+    url: '/Myrtle-Beach-Beachline.jpeg',
+    category: 'Area',
+    alt: 'Beach Line'
   }
 ];
 

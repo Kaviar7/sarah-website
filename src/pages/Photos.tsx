@@ -2,23 +2,73 @@ import { useState } from 'react';
 import { X, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const propertyPhotos = [
-  // --- MAIN HERO IMAGE ADDED HERE ---
+  // --- ORDERED SECTION: BASED ON YOUR SCREENSHOT ---
   {
-    url: '/Home.jpg', // CONFIRMED FILENAME
-    category: 'Area', 
-    alt: 'Main Home Exterior View'
-  },
-  // ------------------------------------
-  {
-    url: '/Bedroom 1.jpg',
+    url: '/Bedroom 1.jpg', // 1. Bedroom One (Start of the House Tour)
     category: 'Bedroom',
     alt: 'Bedroom One'
   },
   {
-    url: '/Bedroom 2.jpg',
+    url: '/Screened-porch.jpg', // 2. Porch (Assuming this is the main Porch view)
+    category: 'Interior', 
+    alt: 'Screened Porch'
+  },
+  {
+    url: '/Internet Cabinet.jpg', // 3. Cabinet
+    category: 'Amenities',
+    alt: 'Internet Cabinet'
+  },
+  {
+    url: '/Grill.jpg', // 4. Grill
+    category: 'Amenities',
+    alt: 'Grill'
+  },
+  {
+    url: '/Dining Room.jpg', // 5. Dining Room
+    category: 'Interior',
+    alt: 'Dining Room'
+  },
+  {
+    url: '/Board Games.jpg', // 6. Board Games
+    category: 'Amenities',
+    alt: 'Board Games'
+  },
+  {
+    url: '/Bedroom 2.jpg', // 7. Bedroom Two
     category: 'Bedroom',
     alt: 'Bedroom Two'
   },
+  {
+    url: '/Kitchen-View.jpg', // 8. Kitchen Counters (Using the clearest kitchen image)
+    category: 'Kitchen',
+    alt: 'Kitchen Counters'
+  },
+  {
+    url: '/Golf Cart.jpg', // 9. Golf Cart
+    category: 'Amenities',
+    alt: 'Golf Cart'
+  },
+  {
+    url: '/Living Room.jpg', // 10. Living Room
+    category: 'Living Room',
+    alt: 'Living Room'
+  },
+  
+  // --- REMAINING IMAGES (Grouped by Category for easy viewing) ---
+
+  // AREA VIEWS
+  {
+    url: '/Home.jpg', 
+    category: 'Area', 
+    alt: 'Main Home Exterior View'
+  },
+  {
+    url: '/Ocean View.jpeg',
+    category: 'Area',
+    alt: 'Ocean View'
+  },
+
+  // BEDROOMS
   {
     url: '/Bedroom Two.jpg',
     category: 'Bedroom',
@@ -49,6 +99,8 @@ const propertyPhotos = [
     category: 'Bedroom',
     alt: 'Bunk Bed Room'
   },
+
+  // KITCHEN
   {
     url: '/Kitchen.jpg',
     category: 'Kitchen',
@@ -60,30 +112,12 @@ const propertyPhotos = [
     alt: 'Kitchen Cabinet'
   },
   {
-    url: '/Kitchen-View.jpg',
-    category: 'Kitchen',
-    alt: 'Kitchen View'
-  },
-  {
     url: '/Kitchen-main-view.jpg',
     category: 'Kitchen',
     alt: 'Kitchen Main View'
   },
-  {
-    url: '/Dining Room.jpg',
-    category: 'Interior',
-    alt: 'Dining Room'
-  },
-  {
-    url: '/Dining Room 1.jpg',
-    category: 'Interior',
-    alt: 'Dining Room View'
-  },
-  {
-    url: '/Living Room.jpg',
-    category: 'Living Room',
-    alt: 'Living Room'
-  },
+  
+  // LIVING ROOM
   {
     url: '/Living-Room-2.jpg',
     category: 'Living Room',
@@ -93,6 +127,13 @@ const propertyPhotos = [
     url: '/Living Room 3.jpg',
     category: 'Living Room',
     alt: 'Living Room View 3'
+  },
+
+  // INTERIOR (Bathroom/Dining/Porch)
+  {
+    url: '/Dining Room 1.jpg',
+    category: 'Interior',
+    alt: 'Dining Room View'
   },
   {
     url: '/Bathroom.jpg',
@@ -110,11 +151,6 @@ const propertyPhotos = [
     alt: 'Bathroom Laundry'
   },
   {
-    url: '/Screened-porch.jpg',
-    category: 'Interior',
-    alt: 'Screened Porch'
-  },
-  {
     url: '/porch close up.jpg',
     category: 'Interior', 
     alt: 'Porch Close Up'
@@ -129,16 +165,8 @@ const propertyPhotos = [
     category: 'Interior', 
     alt: 'Outdoor Porch View 2'
   },
-  {
-    url: '/Internet Cabinet.jpg',
-    category: 'Amenities',
-    alt: 'Internet Cabinet'
-  },
-  {
-    url: '/Golf Cart.jpg',
-    category: 'Amenities',
-    alt: 'Golf Cart'
-  },
+  
+  // AMENITIES
   {
     url: '/Golf Cart 2.jpg',
     category: 'Amenities',
@@ -153,16 +181,6 @@ const propertyPhotos = [
     url: '/Golf Cart 4.jpg',
     category: 'Amenities',
     alt: 'Golf Cart View 4'
-  },
-  {
-    url: '/Grill.jpg',
-    category: 'Amenities',
-    alt: 'Grill'
-  },
-  {
-    url: '/Board Games.jpg',
-    category: 'Amenities',
-    alt: 'Board Games'
   },
   {
     url: '/Board Games 2.jpg',
@@ -183,11 +201,6 @@ const propertyPhotos = [
     url: '/Myrtle.png',
     category: 'Amenities',
     alt: 'Myrtle Beach'
-  },
-  {
-    url: '/Ocean View.jpeg',
-    category: 'Area',
-    alt: 'Ocean View'
   }
 ];
 

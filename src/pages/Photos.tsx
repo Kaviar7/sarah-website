@@ -44,47 +44,47 @@ const propertyPhotos = [
   },
   {
     url: '/Kitchen.jpg',
-    category: 'Kitchen', // NEW CATEGORY
+    category: 'Kitchen',
     alt: 'Kitchen'
   },
   {
     url: '/Kitchen Cabinet.jpg',
-    category: 'Kitchen', // NEW CATEGORY
+    category: 'Kitchen',
     alt: 'Kitchen Cabinet'
   },
   {
     url: '/Kitchen-View.jpg',
-    category: 'Kitchen', // NEW CATEGORY
+    category: 'Kitchen',
     alt: 'Kitchen View'
   },
   {
     url: '/Kitchen-main-view.jpg',
-    category: 'Kitchen', // NEW CATEGORY
+    category: 'Kitchen',
     alt: 'Kitchen Main View'
   },
   {
     url: '/Dining Room.jpg',
-    category: 'Interior', // Stays Interior
+    category: 'Interior',
     alt: 'Dining Room'
   },
   {
     url: '/Dining Room 1.jpg',
-    category: 'Interior', // Stays Interior
+    category: 'Interior',
     alt: 'Dining Room View'
   },
   {
     url: '/Living Room.jpg',
-    category: 'Living Room', // NEW CATEGORY
+    category: 'Living Room',
     alt: 'Living Room'
   },
   {
     url: '/Living-Room-2.jpg',
-    category: 'Living Room', // NEW CATEGORY
+    category: 'Living Room',
     alt: 'Living Room View 2'
   },
   {
     url: '/Living Room 3.jpg',
-    category: 'Living Room', // NEW CATEGORY
+    category: 'Living Room',
     alt: 'Living Room View 3'
   },
   {
@@ -107,6 +107,23 @@ const propertyPhotos = [
     category: 'Interior',
     alt: 'Screened Porch'
   },
+  // --- NEW PORCH IMAGES ADDED HERE ---
+  {
+    url: '/porch close up.jpg',
+    category: 'Interior', 
+    alt: 'Porch Close Up'
+  },
+  {
+    url: '/outdoor porch.jpg',
+    category: 'Interior', 
+    alt: 'Outdoor Porch'
+  },
+  {
+    url: '/ourdoor porch 2.jpg',
+    category: 'Interior', 
+    alt: 'Outdoor Porch View 2'
+  },
+  // ------------------------------------
   {
     url: '/Internet Cabinet.jpg',
     category: 'Amenities',
@@ -143,6 +160,11 @@ const propertyPhotos = [
     alt: 'Board Games'
   },
   {
+    url: '/Board Games 2.jpg', // NEW BOARD GAMES IMAGE
+    category: 'Amenities',
+    alt: 'Board Games View 2'
+  },
+  {
     url: '/Outdoor Shower.jpg',
     category: 'Amenities',
     alt: 'Outdoor Shower'
@@ -154,10 +176,14 @@ const propertyPhotos = [
   },
   {
     url: '/Myrtle.png',
-    category: 'Amenities', // CATEGORY CHANGED from 'Area'
+    category: 'Amenities',
     alt: 'Myrtle Beach'
   },
-  // Deleted: Myrtle-Beach-Beachline.jpeg
+  {
+    url: '/Ocean View.jpeg', // NEW OCEAN VIEW IMAGE
+    category: 'Area',
+    alt: 'Ocean View'
+  }
 ];
 
 export default function Photos() {

@@ -2,206 +2,56 @@ import { useState } from 'react';
 import { X, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const propertyPhotos = [
-  // --- ORDERED SECTION: BASED ON YOUR SCREENSHOT ---
-  {
-    url: '/Bedroom 1.jpg', // 1. Bedroom One (Start of the House Tour)
-    category: 'Bedroom',
-    alt: 'Bedroom One'
-  },
-  {
-    url: '/Screened-porch.jpg', // 2. Porch (Assuming this is the main Porch view)
-    category: 'Interior', 
-    alt: 'Screened Porch'
-  },
-  {
-    url: '/Internet Cabinet.jpg', // 3. Cabinet
-    category: 'Amenities',
-    alt: 'Internet Cabinet'
-  },
-  {
-    url: '/Grill.jpg', // 4. Grill
-    category: 'Amenities',
-    alt: 'Grill'
-  },
-  {
-    url: '/Dining Room.jpg', // 5. Dining Room
-    category: 'Interior',
-    alt: 'Dining Room'
-  },
-  {
-    url: '/Board Games.jpg', // 6. Board Games
-    category: 'Amenities',
-    alt: 'Board Games'
-  },
-  {
-    url: '/Bedroom 2.jpg', // 7. Bedroom Two
-    category: 'Bedroom',
-    alt: 'Bedroom Two'
-  },
-  {
-    url: '/Kitchen-View.jpg', // 8. Kitchen Counters (Using the clearest kitchen image)
-    category: 'Kitchen',
-    alt: 'Kitchen Counters'
-  },
-  {
-    url: '/Golf Cart.jpg', // 9. Golf Cart
-    category: 'Amenities',
-    alt: 'Golf Cart'
-  },
-  {
-    url: '/Living Room.jpg', // 10. Living Room
-    category: 'Living Room',
-    alt: 'Living Room'
-  },
+  // --- EXACT ORDERED LIST (34 IMAGES) ---
+  // EXTERIOR & LIVING AREAS
+  { url: '/Home.jpg', category: 'Area', alt: 'Main Home Exterior View' }, // 1
+  { url: '/Ocean View.jpeg', category: 'Area', alt: 'Ocean View' }, // 2
+  { url: '/Living Room.jpg', category: 'Living Room', alt: 'Living Room' }, // 3
+  { url: '/Screened-porch.jpg', category: 'Interior', alt: 'Screened Porch' }, // 4
+  { url: '/Living-Room-2.jpg', category: 'Living Room', alt: 'Living Room View 2' }, // 5
+  { url: '/Living Room 3.jpg', category: 'Living Room', alt: 'Living Room View 3' }, // 6
+  { url: '/porch close up.jpg', category: 'Interior', alt: 'Porch Close Up' }, // 7
+  { url: '/patio.jpg', category: 'Amenities', alt: 'Patio' }, // 8
+
+  // KITCHEN & DINING
+  { url: '/Kitchen-main-view.jpg', category: 'Kitchen', alt: 'Kitchen Main View' }, // 9
+  { url: '/Kitchen-View.jpg', category: 'Kitchen', alt: 'Kitchen Counters' }, // 10 (Using this for counters)
+  { url: '/Kitchen.jpg', category: 'Kitchen', alt: 'Kitchen' }, // 11
+  { url: '/Dining Room 1.jpg', category: 'Interior', alt: 'Dining Room View' }, // 12
+  { url: '/Dining Room.jpg', category: 'Interior', alt: 'Dining Room' }, // 13
+
+  // BUNK & BEDROOMS
+  { url: '/Bunk Bed Room.jpg', category: 'Bedroom', alt: 'Bunk Bed Room' }, // 14
+  { url: '/Bunk Beds.jpg', category: 'Bedroom', alt: 'Bunk Beds' }, // 15
+  { url: '/Bedroom One view.jpg', category: 'Bedroom', alt: 'Bedroom One View' }, // 16
+  { url: '/Bedroom One Sideview.jpg', category: 'Bedroom', alt: 'Bedroom One Side View' }, // 17
+  { url: '/Bedroom 1.jpg', category: 'Bedroom', alt: 'Bedroom One' }, // 18
+  { url: '/Bedroom Two.jpg', category: 'Bedroom', alt: 'Bedroom Two Alternate' }, // 19
+  { url: '/Bedroom 2.jpg', category: 'Bedroom', alt: 'Bedroom Two' }, // 20
+  { url: '/Bedroom Two Bookshelf.jpg', category: 'Bedroom', alt: 'Bedroom Two Bookshelf' }, // 21
+
+  // BATHROOM & UTILITY
+  { url: '/Bathroom Laundry.jpg', category: 'Interior', alt: 'Bathroom Laundry' }, // 22
+  { url: '/Bathroom-2.jpg', category: 'Interior', alt: 'Bathroom View 2' }, // 23
+  { url: '/Bathroom.jpg', category: 'Interior', alt: 'Bathroom' }, // 24
+
+  // EXTERIOR & AMENITIES
+  { url: '/outdoor porch.jpg', category: 'Interior', alt: 'Outdoor Porch' }, // 25
+  { url: '/outdoor porch 2.jpg', category: 'Interior', alt: 'Outdoor Porch View 2' }, // 26
+  { url: '/Grill.jpg', category: 'Amenities', alt: 'Grill' }, // 27
+  { url: '/Board Games 2.jpg', category: 'Amenities', alt: 'Board Games View 2' }, // 28
+  { url: '/Board Games.jpg', category: 'Amenities', alt: 'Board Games' }, // 29
+  { url: '/Outdoor Shower.jpg', category: 'Amenities', alt: 'Outdoor Shower' }, // 30
+
+  // GOLF CART
+  { url: '/Golf Cart.jpg', category: 'Amenities', alt: 'Golf Cart' }, // 31
+  { url: '/Golf Cart 3.jpg', category: 'Amenities', alt: 'Golf Cart View 3' }, // 32
+  { url: '/Golf Cart 4.jpg', category: 'Amenities', alt: 'Golf Cart View 4' }, // 33
+  { url: '/Golf Cart 2.jpg', category: 'Amenities', alt: 'Golf Cart View 2' }, // 34
   
-  // --- REMAINING IMAGES (Grouped by Category for easy viewing) ---
-
-  // AREA VIEWS
-  {
-    url: '/Home.jpg', 
-    category: 'Area', 
-    alt: 'Main Home Exterior View'
-  },
-  {
-    url: '/Ocean View.jpeg',
-    category: 'Area',
-    alt: 'Ocean View'
-  },
-
-  // BEDROOMS
-  {
-    url: '/Bedroom Two.jpg',
-    category: 'Bedroom',
-    alt: 'Bedroom Two Alternate'
-  },
-  {
-    url: '/Bedroom One Sideview.jpg',
-    category: 'Bedroom',
-    alt: 'Bedroom One Side View'
-  },
-  {
-    url: '/Bedroom One view.jpg',
-    category: 'Bedroom',
-    alt: 'Bedroom One View'
-  },
-  {
-    url: '/Bedroom Two Bookshelf.jpg',
-    category: 'Bedroom',
-    alt: 'Bedroom Two Bookshelf'
-  },
-  {
-    url: '/Bunk Beds.jpg',
-    category: 'Bedroom',
-    alt: 'Bunk Beds'
-  },
-  {
-    url: '/Bunk Bed Room.jpg',
-    category: 'Bedroom',
-    alt: 'Bunk Bed Room'
-  },
-
-  // KITCHEN
-  {
-    url: '/Kitchen.jpg',
-    category: 'Kitchen',
-    alt: 'Kitchen'
-  },
-  {
-    url: '/Kitchen Cabinet.jpg',
-    category: 'Kitchen',
-    alt: 'Kitchen Cabinet'
-  },
-  {
-    url: '/Kitchen-main-view.jpg',
-    category: 'Kitchen',
-    alt: 'Kitchen Main View'
-  },
-  
-  // LIVING ROOM
-  {
-    url: '/Living-Room-2.jpg',
-    category: 'Living Room',
-    alt: 'Living Room View 2'
-  },
-  {
-    url: '/Living Room 3.jpg',
-    category: 'Living Room',
-    alt: 'Living Room View 3'
-  },
-
-  // INTERIOR (Bathroom/Dining/Porch)
-  {
-    url: '/Dining Room 1.jpg',
-    category: 'Interior',
-    alt: 'Dining Room View'
-  },
-  {
-    url: '/Bathroom.jpg',
-    category: 'Interior',
-    alt: 'Bathroom'
-  },
-  {
-    url: '/Bathroom-2.jpg',
-    category: 'Interior',
-    alt: 'Bathroom View 2'
-  },
-  {
-    url: '/Bathroom Laundry.jpg',
-    category: 'Interior',
-    alt: 'Bathroom Laundry'
-  },
-  {
-    url: '/porch close up.jpg',
-    category: 'Interior', 
-    alt: 'Porch Close Up'
-  },
-  {
-    url: '/outdoor porch.jpg',
-    category: 'Interior', 
-    alt: 'Outdoor Porch'
-  },
-  {
-    url: '/outdoor porch 2.jpg',
-    category: 'Interior', 
-    alt: 'Outdoor Porch View 2'
-  },
-  
-  // AMENITIES
-  {
-    url: '/Golf Cart 2.jpg',
-    category: 'Amenities',
-    alt: 'Golf Cart View 2'
-  },
-  {
-    url: '/Golf Cart 3.jpg',
-    category: 'Amenities',
-    alt: 'Golf Cart View 3'
-  },
-  {
-    url: '/Golf Cart 4.jpg',
-    category: 'Amenities',
-    alt: 'Golf Cart View 4'
-  },
-  {
-    url: '/Board Games 2.jpg',
-    category: 'Amenities',
-    alt: 'Board Games View 2'
-  },
-  {
-    url: '/Outdoor Shower.jpg',
-    category: 'Amenities',
-    alt: 'Outdoor Shower'
-  },
-  {
-    url: '/patio.jpg',
-    category: 'Amenities',
-    alt: 'Patio'
-  },
-  {
-    url: '/Myrtle.png',
-    category: 'Amenities',
-    alt: 'Myrtle Beach'
-  }
+  // UNUSED IMAGES (Keeping in case they are needed for completeness)
+  { url: '/Myrtle.png', category: 'Amenities', alt: 'Myrtle Beach' },
+  { url: '/Internet Cabinet.jpg', category: 'Amenities', alt: 'Internet Cabinet' },
 ];
 
 export default function Photos() {

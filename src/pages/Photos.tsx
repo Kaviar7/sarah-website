@@ -107,7 +107,6 @@ const propertyPhotos = [
     category: 'Interior',
     alt: 'Screened Porch'
   },
-  // --- NEW PORCH IMAGES ADDED HERE ---
   {
     url: '/porch close up.jpg',
     category: 'Interior', 
@@ -119,11 +118,10 @@ const propertyPhotos = [
     alt: 'Outdoor Porch'
   },
   {
-    url: '/ourdoor porch 2.jpg',
+    url: '/outdoor porch 2.jpg', // CORRECTED FILENAME HERE
     category: 'Interior', 
     alt: 'Outdoor Porch View 2'
   },
-  // ------------------------------------
   {
     url: '/Internet Cabinet.jpg',
     category: 'Amenities',
@@ -160,7 +158,7 @@ const propertyPhotos = [
     alt: 'Board Games'
   },
   {
-    url: '/Board Games 2.jpg', // NEW BOARD GAMES IMAGE
+    url: '/Board Games 2.jpg',
     category: 'Amenities',
     alt: 'Board Games View 2'
   },
@@ -180,7 +178,7 @@ const propertyPhotos = [
     alt: 'Myrtle Beach'
   },
   {
-    url: '/Ocean View.jpeg', // NEW OCEAN VIEW IMAGE
+    url: '/Ocean View.jpeg',
     category: 'Area',
     alt: 'Ocean View'
   }

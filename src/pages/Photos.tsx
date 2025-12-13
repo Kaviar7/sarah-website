@@ -2,11 +2,11 @@ import { useState } from 'react';
 import { X, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const propertyPhotos = [
-  // --- NEW MAIN IMAGE ADDED HERE ---
+  // --- MAIN HERO IMAGE ADDED HERE ---
   {
-    url: '/Aerial View.jpg', // **ASSUMING THIS IS YOUR MAIN IMAGE FILENAME**
+    url: '/Home.jpg', // CONFIRMED FILENAME
     category: 'Area', 
-    alt: 'Property Aerial View'
+    alt: 'Main Home Exterior View'
   },
   // ------------------------------------
   {

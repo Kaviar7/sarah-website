@@ -44,47 +44,47 @@ const propertyPhotos = [
   },
   {
     url: '/Kitchen.jpg',
-    category: 'Interior',
+    category: 'Kitchen', // NEW CATEGORY
     alt: 'Kitchen'
   },
   {
     url: '/Kitchen Cabinet.jpg',
-    category: 'Interior',
+    category: 'Kitchen', // NEW CATEGORY
     alt: 'Kitchen Cabinet'
   },
   {
     url: '/Kitchen-View.jpg',
-    category: 'Interior',
+    category: 'Kitchen', // NEW CATEGORY
     alt: 'Kitchen View'
   },
   {
     url: '/Kitchen-main-view.jpg',
-    category: 'Interior',
+    category: 'Kitchen', // NEW CATEGORY
     alt: 'Kitchen Main View'
   },
   {
     url: '/Dining Room.jpg',
-    category: 'Interior',
+    category: 'Interior', // Stays Interior
     alt: 'Dining Room'
   },
   {
     url: '/Dining Room 1.jpg',
-    category: 'Interior',
+    category: 'Interior', // Stays Interior
     alt: 'Dining Room View'
   },
   {
     url: '/Living Room.jpg',
-    category: 'Interior',
+    category: 'Living Room', // NEW CATEGORY
     alt: 'Living Room'
   },
   {
     url: '/Living-Room-2.jpg',
-    category: 'Interior',
+    category: 'Living Room', // NEW CATEGORY
     alt: 'Living Room View 2'
   },
   {
     url: '/Living Room 3.jpg',
-    category: 'Interior',
+    category: 'Living Room', // NEW CATEGORY
     alt: 'Living Room View 3'
   },
   {
@@ -154,14 +154,10 @@ const propertyPhotos = [
   },
   {
     url: '/Myrtle.png',
-    category: 'Area',
+    category: 'Amenities', // CATEGORY CHANGED from 'Area'
     alt: 'Myrtle Beach'
   },
-  {
-    url: '/Myrtle-Beach-Beachline.jpeg',
-    category: 'Area',
-    alt: 'Beach Line'
-  }
+  // Deleted: Myrtle-Beach-Beachline.jpeg
 ];
 
 export default function Photos() {

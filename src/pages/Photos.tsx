@@ -2,6 +2,13 @@ import { useState } from 'react';
 import { X, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const propertyPhotos = [
+  // --- NEW MAIN IMAGE ADDED HERE ---
+  {
+    url: '/Aerial View.jpg', // **ASSUMING THIS IS YOUR MAIN IMAGE FILENAME**
+    category: 'Area', 
+    alt: 'Property Aerial View'
+  },
+  // ------------------------------------
   {
     url: '/Bedroom 1.jpg',
     category: 'Bedroom',
@@ -118,7 +125,7 @@ const propertyPhotos = [
     alt: 'Outdoor Porch'
   },
   {
-    url: '/outdoor porch 2.jpg', // CORRECTED FILENAME HERE
+    url: '/outdoor porch 2.jpg',
     category: 'Interior', 
     alt: 'Outdoor Porch View 2'
   },

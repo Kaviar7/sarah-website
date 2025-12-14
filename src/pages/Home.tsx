@@ -34,7 +34,8 @@ export default function Home() {
       <div
         className="relative h-[600px] bg-cover bg-center flex items-center justify-center"
         style={{
-          backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://a0.muscache.com/im/pictures/hosting/Hosting-1552491472148345960/original/44d3a29d-fb5d-4b16-aec5-b3b46a3d4ed4.jpeg?im_w=1200)',
+          // *** UPDATED TO USE LOCAL IMAGE: /Front Of House.jpeg ***
+          backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/Front Of House.jpeg')",
         }}
       >
         <div className="text-center text-white px-4 max-w-4xl">

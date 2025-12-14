@@ -34,8 +34,8 @@ export default function Home() {
       <div
         className="relative h-[600px] bg-cover bg-center flex items-center justify-center"
         style={{
-          // *** UPDATED TO USE LOCAL IMAGE: /Front Of House.jpeg ***
-          backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/Front Of House.jpeg')",
+          // *** UPDATED OVERLAY: Increased black opacity from 0.4 to 0.6 ***
+          backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/Front Of House.jpeg')",
         }}
       >
         <div className="text-center text-white px-4 max-w-4xl">

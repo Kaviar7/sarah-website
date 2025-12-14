@@ -1,8 +1,10 @@
+import { useState } from 'react'; // <--- NEW: Import useState
 import { Link, useLocation } from 'react-router-dom';
-import { Waves, Home, ImageIcon, MapPin, Mail, Calendar } from 'lucide-react';
+import { Waves, Home, ImageIcon, MapPin, Mail, Calendar, Menu } from 'lucide-react'; // <--- UPDATED: Imported Menu icon
 
 export default function Navigation() {
   const location = useLocation();
+  const [isOpen, setIsOpen] = useState(false); // <--- NEW: State for mobile menu
 
   const isActive = (path: string) => location.pathname === path;
 
@@ -12,6 +14,10 @@ export default function Navigation() {
     { path: '/nearby', label: 'Things Nearby', icon: MapPin },
     { path: '/contact', label: 'Contact', icon: Mail },
   ];
+
+  const toggleMenu = () => { // <--- NEW: Function to toggle menu state
+    setIsOpen(!isOpen);
+  };
 
   return (
     <nav className="bg-gradient-to-r from-cyan-600 to-blue-700 shadow-lg sticky top-0 z-50">
@@ -25,6 +31,7 @@ export default function Navigation() {
             </div>
           </Link>
 
+          {/* Desktop Navigation (Hidden on Mobile) */}
           <div className="hidden md:flex space-x-1">
             {navLinks.map(({ path, label, icon: Icon }) => (
               <Link
@@ -42,28 +49,37 @@ export default function Navigation() {
             ))}
             <Link
               to="/book"
-              className="flex items-center space-x-2 px-6 py-2 bg-coral-500 hover:bg-coral-600 text-white rounded-lg transition-all shadow-md hover:shadow-lg ml-4"
-              style={{ backgroundColor: isActive('/book') ? '#f59e0b' : '#f97316' }}
+              className="flex items-center space-x-2 px-6 py-2 bg-orange-500 hover:bg-orange-600 text-white rounded-lg transition-all shadow-md hover:shadow-lg ml-4" // Removed the inline style for color to use Tailwind classes consistently
             >
               <Calendar className="h-5 w-5" />
               <span className="font-bold">Book Now</span>
             </Link>
           </div>
 
+          {/* Mobile Menu Button (Visible on Mobile) */}
           <div className="md:hidden">
-            <button className="text-white p-2">
-              <svg className="h-6 w-6" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
-                <path d="M4 6h16M4 12h16M4 18h16"></path>
-              </svg>
+            <button 
+              className="text-white p-2" 
+              onClick={toggleMenu} // <--- NEW: Toggle menu on click
+              aria-expanded={isOpen}
+              aria-controls="mobile-menu"
+            >
+              {/* Using lucide-react Menu icon instead of raw SVG for consistency */}
+              <Menu className="h-6 w-6" /> 
             </button>
           </div>
         </div>
 
-        <div className="md:hidden pb-4 space-y-2">
+        {/* Mobile Menu Content (Hidden by default, shown by 'isOpen' state) */}
+        <div 
+          id="mobile-menu"
+          className={`${isOpen ? 'block' : 'hidden'} md:hidden pb-4 space-y-2`} // <--- NEW: Conditional class
+        >
           {navLinks.map(({ path, label, icon: Icon }) => (
             <Link
               key={path}
               to={path}
+              onClick={toggleMenu} // <--- NEW: Close menu after clicking link
               className={`flex items-center space-x-2 px-4 py-3 rounded-lg transition-all ${
                 isActive(path)
                   ? 'bg-white text-cyan-700'
@@ -76,6 +92,7 @@ export default function Navigation() {
           ))}
           <Link
             to="/book"
+            onClick={toggleMenu} // <--- NEW: Close menu after clicking link
             className="flex items-center space-x-2 px-4 py-3 bg-orange-500 hover:bg-orange-600 text-white rounded-lg transition-all"
           >
             <Calendar className="h-5 w-5" />

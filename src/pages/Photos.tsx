@@ -2,52 +2,61 @@ import { useState } from 'react';
 import { X, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const propertyPhotos = [
+  // --- NEW ADDITIONS ---
+  { url: '/Front Of House.jpeg', category: 'Area', alt: 'Front Of House View' }, // 1 (NEW)
+  // --- END NEW ADDITIONS ---
+
   // --- EXACT ORDERED LIST (34 IMAGES) ---
   // EXTERIOR & LIVING AREAS
-  { url: '/Home.jpg', category: 'Area', alt: 'Main Home Exterior View' }, // 1
-  { url: '/Ocean View.jpeg', category: 'Area', alt: 'Ocean View' }, // 2
-  { url: '/Living Room.jpg', category: 'Living Room', alt: 'Living Room' }, // 3
-  { url: '/Screened-porch.jpg', category: 'Interior', alt: 'Screened Porch' }, // 4
-  { url: '/Living-Room-2.jpg', category: 'Living Room', alt: 'Living Room View 2' }, // 5
-  { url: '/Living Room 3.jpg', category: 'Living Room', alt: 'Living Room View 3' }, // 6
-  { url: '/porch close up.jpg', category: 'Interior', alt: 'Porch Close Up' }, // 7
-  { url: '/patio.jpg', category: 'Amenities', alt: 'Patio' }, // 8
+  { url: '/Home.jpg', category: 'Area', alt: 'Main Home Exterior View' }, // 2
+  { url: '/Ocean View.jpeg', category: 'Area', alt: 'Ocean View' }, // 3
+  { url: '/Living Room.jpg', category: 'Living Room', alt: 'Living Room' }, // 4
+  { url: '/Screened-porch.jpg', category: 'Interior', alt: 'Screened Porch' }, // 5
+  { url: '/Living-Room-2.jpg', category: 'Living Room', alt: 'Living Room View 2' }, // 6
+  { url: '/Living Room 3.jpg', category: 'Living Room', alt: 'Living Room View 3' }, // 7
+  { url: '/porch close up.jpg', category: 'Interior', alt: 'Porch Close Up' }, // 8
+  { url: '/patio.jpg', category: 'Amenities', alt: 'Patio' }, // 9
 
   // KITCHEN & DINING
-  { url: '/Kitchen-main-view.jpg', category: 'Kitchen', alt: 'Kitchen Main View' }, // 9
-  { url: '/Kitchen-View.jpg', category: 'Kitchen', alt: 'Kitchen Counters' }, // 10 (Using this for counters)
-  { url: '/Kitchen.jpg', category: 'Kitchen', alt: 'Kitchen' }, // 11
-  { url: '/Dining Room 1.jpg', category: 'Interior', alt: 'Dining Room View' }, // 12
-  { url: '/Dining Room.jpg', category: 'Interior', alt: 'Dining Room' }, // 13
+  { url: '/Kitchen-main-view.jpg', category: 'Kitchen', alt: 'Kitchen Main View' }, // 10
+  { url: '/Kitchen-View.jpg', category: 'Kitchen', alt: 'Kitchen Counters' }, // 11
+  { url: '/Kitchen.jpg', category: 'Kitchen', alt: 'Kitchen' }, // 12
+  { url: '/Dining Room 1.jpg', category: 'Interior', alt: 'Dining Room View' }, // 13
+  { url: '/Dining Room.jpg', category: 'Interior', alt: 'Dining Room' }, // 14
+  
+  // --- NEW ADDITIONS (Interior) ---
+  { url: '/Welcome To The Blessed Frog.jpeg', category: 'Interior', alt: 'Welcome To The Blessed Frog' }, // 15 (NEW)
+  { url: '/The Blessed Frog.jpeg', category: 'Interior', alt: 'The Blessed Frog' }, // 16 (NEW)
+  // --- END NEW ADDITIONS ---
 
   // BUNK & BEDROOMS
-  { url: '/Bunk Bed Room.jpg', category: 'Bedroom', alt: 'Bunk Bed Room' }, // 14
-  { url: '/Bunk Beds.jpg', category: 'Bedroom', alt: 'Bunk Beds' }, // 15
-  { url: '/Bedroom One view.jpg', category: 'Bedroom', alt: 'Bedroom One View' }, // 16
-  { url: '/Bedroom One Sideview.jpg', category: 'Bedroom', alt: 'Bedroom One Side View' }, // 17
-  { url: '/Bedroom 1.jpg', category: 'Bedroom', alt: 'Bedroom One' }, // 18
-  { url: '/Bedroom Two.jpg', category: 'Bedroom', alt: 'Bedroom Two Alternate' }, // 19
-  { url: '/Bedroom 2.jpg', category: 'Bedroom', alt: 'Bedroom Two' }, // 20
-  { url: '/Bedroom Two Bookshelf.jpg', category: 'Bedroom', alt: 'Bedroom Two Bookshelf' }, // 21
+  { url: '/Bunk Bed Room.jpg', category: 'Bedroom', alt: 'Bunk Bed Room' }, // 17
+  { url: '/Bunk Beds.jpg', category: 'Bedroom', alt: 'Bunk Beds' }, // 18
+  { url: '/Bedroom One view.jpg', category: 'Bedroom', alt: 'Bedroom One View' }, // 19
+  { url: '/Bedroom One Sideview.jpg', category: 'Bedroom', alt: 'Bedroom One Side View' }, // 20
+  { url: '/Bedroom 1.jpg', category: 'Bedroom', alt: 'Bedroom One' }, // 21
+  { url: '/Bedroom Two.jpg', category: 'Bedroom', alt: 'Bedroom Two Alternate' }, // 22
+  { url: '/Bedroom 2.jpg', category: 'Bedroom', alt: 'Bedroom Two' }, // 23
+  { url: '/Bedroom Two Bookshelf.jpg', category: 'Bedroom', alt: 'Bedroom Two Bookshelf' }, // 24
 
   // BATHROOM & UTILITY
-  { url: '/Bathroom Laundry.jpg', category: 'Interior', alt: 'Bathroom Laundry' }, // 22
-  { url: '/Bathroom-2.jpg', category: 'Interior', alt: 'Bathroom View 2' }, // 23
-  { url: '/Bathroom.jpg', category: 'Interior', alt: 'Bathroom' }, // 24
+  { url: '/Bathroom Laundry.jpg', category: 'Interior', alt: 'Bathroom Laundry' }, // 25
+  { url: '/Bathroom-2.jpg', category: 'Interior', alt: 'Bathroom View 2' }, // 26
+  { url: '/Bathroom.jpg', category: 'Interior', alt: 'Bathroom' }, // 27
 
   // EXTERIOR & AMENITIES
-  { url: '/outdoor porch.jpg', category: 'Interior', alt: 'Outdoor Porch' }, // 25
-  { url: '/outdoor porch 2.jpg', category: 'Interior', alt: 'Outdoor Porch View 2' }, // 26
-  { url: '/Grill.jpg', category: 'Amenities', alt: 'Grill' }, // 27
-  { url: '/Board Games 2.jpg', category: 'Amenities', alt: 'Board Games View 2' }, // 28
-  { url: '/Board Games.jpg', category: 'Amenities', alt: 'Board Games' }, // 29
-  { url: '/Outdoor Shower.jpg', category: 'Amenities', alt: 'Outdoor Shower' }, // 30
+  { url: '/outdoor porch.jpg', category: 'Interior', alt: 'Outdoor Porch' }, // 28
+  { url: '/outdoor porch 2.jpg', category: 'Interior', alt: 'Outdoor Porch View 2' }, // 29
+  { url: '/Grill.jpg', category: 'Amenities', alt: 'Grill' }, // 30
+  { url: '/Board Games 2.jpg', category: 'Amenities', alt: 'Board Games View 2' }, // 31
+  { url: '/Board Games.jpg', category: 'Amenities', alt: 'Board Games' }, // 32
+  { url: '/Outdoor Shower.jpg', category: 'Amenities', alt: 'Outdoor Shower' }, // 33
 
   // GOLF CART
-  { url: '/Golf Cart.jpg', category: 'Amenities', alt: 'Golf Cart' }, // 31
-  { url: '/Golf Cart 3.jpg', category: 'Amenities', alt: 'Golf Cart View 3' }, // 32
-  { url: '/Golf Cart 4.jpg', category: 'Amenities', alt: 'Golf Cart View 4' }, // 33
-  { url: '/Golf Cart 2.jpg', category: 'Amenities', alt: 'Golf Cart View 2' }, // 34
+  { url: '/Golf Cart.jpg', category: 'Amenities', alt: 'Golf Cart' }, // 34
+  { url: '/Golf Cart 3.jpg', category: 'Amenities', alt: 'Golf Cart View 3' }, // 35
+  { url: '/Golf Cart 4.jpg', category: 'Amenities', alt: 'Golf Cart View 4' }, // 36
+  { url: '/Golf Cart 2.jpg', category: 'Amenities', alt: 'Golf Cart View 2' }, // 37
   
   // UNUSED IMAGES (Keeping in case they are needed for completeness)
   { url: '/Myrtle.png', category: 'Amenities', alt: 'Myrtle Beach' },
@@ -112,7 +121,7 @@ export default function Photos() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredPhotos.map((photo, index) => (
             <div
-              key={index}
+              key={photo.url} // Changed key to photo.url for better stability
               className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all cursor-pointer bg-white"
               onClick={() => openLightbox(index)}
             >

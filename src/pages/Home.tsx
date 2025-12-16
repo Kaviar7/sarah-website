@@ -24,107 +24,42 @@ export default function App() {
       image: '/Golf Cart.jpg'
     },
     {
-      title: 'Screened Porch & Deck',
-      description: 'Relax on the spacious screened porch or grill on the outdoor deck',
-      image: '/Screened-porch.jpg'
+      title: 'Spacious Coastal Living Room', // UPDATED TITLE (Now Living Room)
+      description: 'Relax and unwind in the beautifully renovated living area with a queen sleeper sofa and Roku TV.', // UPDATED DESCRIPTION
+      image: '/Living-Room.jpg' // Placeholder for Living Room
     }
   ];
 
-  // The full, formatted description content
+  // The full, formatted description content - SHORTENED BY ~30%
   const aboutYourStayContent = (
-    <div className="text-gray-700 leading-relaxed space-y-6">
+    <div className="text-gray-700 leading-relaxed space-y-4">
       <p className="text-lg">
-        <span className="font-bold text-gray-900">Welcome to your happy place by the sea!</span> Relax, unwind, and make lasting memories in this beautifully renovated 3-bedroom beach cottage located in the award-winning Ocean Lakes Family Campground.
+        <span className="font-bold text-gray-900">Welcome to Sea Your Bliss!</span> This beautifully renovated 3-bedroom beach cottage is located on a <span className="font-bold">PRIME CORNER LOT</span> at Mermaid Drive/Sand Dollar Dr in the award-winning Ocean Lakes Family Campground. Enjoy extra privacy, tranquil Pond Views, and minutes-long access to the beach.
       </p>
 
-      <div className="space-y-4">
-        <h3 className="font-bold text-xl text-gray-900">PRIME CORNER LOT AT MERMAID DRIVE/SAND DOLLAR DR</h3>
-        <p>
-          Situated on a prime corner lot at Mermaid Drive and Sand Dollar Dr, you are in the perfect spot for relaxation. Enjoy tranquil Pond Views right across the street and the extra privacy that comes with a corner location (no being squeezed between two other houses!). Best of all, you are just a short walk or minutes from the beach on the golf cart!
-        </p>
-      </div>
-
-      <div className="space-y-4">
-        <h3 className="text-xl">
-          <span className="font-semibold text-cyan-700">FREE GOLF CART INCLUDED</span>
-        </h3>
-        <p>Explore Ocean Lakes in style with our Electric EZ-GO Golf Cart.</p>
-        <ul className="list-disc list-inside space-y-1 pl-4">
-          <li><span className="font-bold">Included Free:</span> We waive the rental fee so you save money!</li>
-          <li><span className="font-bold">Convenience:</span> Zip to the beach, the water park, or the camp store with ease.</li>
-          <li className="italic text-sm text-gray-600">(Note: Drivers must be 18+ with a valid license)</li>
+      <div className="space-y-3">
+        <h3 className="text-xl font-semibold text-gray-900 border-b pb-1">KEY FEATURES & COMFORT</h3>
+        <ul className="list-disc list-inside space-y-2 pl-4">
+          <li><span className="font-semibold text-cyan-700">FREE GOLF CART:</span> Included with your stay to explore the camp resort in style. (Drivers 18+ w/ valid license).</li>
+          <li><span className="font-bold">Sleeps 9:</span> Features 2 Queen bedrooms, Twin Bunk Beds, Queen Sleeper Sofa, and a Twin Daybed.</li>
+          <li><span className="font-bold">Renovated Interior:</span> Modern finishes, a full Chef-Ready Kitchen (Dual Coffee Maker, Dishwasher), and granite vanity bathroom.</li>
+          <li><span className="font-bold">Outdoor Living:</span> Spacious L-shaped deck for grilling (electric grill provided), plus an essential Outdoor Shower and a Bug-Free Sun Lounge.</li>
+          <li><span className="font-bold">Convenience:</span> Linens and towels are INCLUDED for all beds. High-speed WiFi and 4 Smart Roku TVs for entertainment.</li>
         </ul>
       </div>
 
-      <div className="space-y-4">
-        <h3 className="font-bold text-xl text-gray-900">OUTDOOR LIVING AT ITS BEST</h3>
-        <p>We have designed the outdoor space to be just as comfortable as the inside!</p>
-        <ul className="list-disc list-inside space-y-1 pl-4">
-          <li><span className="font-bold">Spacious Deck:</span> A large L-shaped deck for grilling and soaking up the sun.</li>
-          <li><span className="font-bold">Outdoor Shower:</span> The ultimate beach convenience for rinsing off sand and salt.</li>
-          <li><span className="font-bold">Grilling:</span> An electric grill is provided for family cookouts.</li>
+      <div className="space-y-3">
+        <h3 className="text-xl font-semibold text-gray-900 border-b pb-1">RESORT ACCESS & RULES</h3>
+        <p>Your booking includes full access to all Ocean Lakes amenities: the 4-acre Water Park (slides, lazy river), indoor heated pool, mini-golf, and a mile-long sandy beach.</p>
+        <ul className="list-disc list-inside space-y-2 pl-4">
+          <li><span className="font-bold">Parking:</span> Max 2 vehicles. Passes are $12-$15/day/vehicle (paid directly to Ocean Lakes).</li>
+          <li><span className="font-bold">House Rules:</span> Families only (primary renter must be 25+). No pets, no smoking/vaping, and no parties.</li>
         </ul>
       </div>
 
-      <div className="space-y-4">
-        <h3 className="font-bold text-xl text-gray-900">SLEEPING ARRANGEMENTS (Sleeps 9 Guests)</h3>
-        <p>This home is perfect for large families, with flexible sleeping options:</p>
-        <ul className="list-disc list-inside space-y-1 pl-4">
-          <li><span className="font-bold">Bedroom 1:</span> Queen Bed + Roku TV</li>
-          <li><span className="font-bold">Bedroom 2:</span> Queen Bed + Roku TV</li>
-          <li><span className="font-bold">Bedroom 3:</span> Twin Bunk Beds (Kids love this!) + Roku TV</li>
-          <li><span className="font-bold">Living Room:</span> Queen Sleeper Sofa</li>
-          <li><span className="font-bold">Sunroom:</span> Twin Daybed (Perfect for reading or a quiet nap)</li>
-        </ul>
-      </div>
-
-      <div className="space-y-4">
-        <h3 className="font-bold text-xl text-gray-900">COMFORT & CONVENIENCE</h3>
-        <ul className="list-disc list-inside space-y-1 pl-4">
-          <li><span className="font-bold">Renovated Interior:</span> Enjoy modern finishes, new flooring, and a fresh coastal vibe.</li>
-          <li><span className="font-bold">Pack Light:</span> Linens and towels are INCLUDED for all beds! (Just bring your own beach towels and paper products).</li>
-          <li><span className="font-bold">Chef-Ready Kitchen:</span> Fully stocked with cookware, glass-top stove, dishwasher, and a Dual Coffee Maker (Keurig + Drip) because we know caffeine is essential!</li>
-          <li><span className="font-bold">Bathroom:</span> Full bath featuring a modern subway-tiled shower and granite vanity.</li>
-        </ul>
-      </div>
-
-      <div className="space-y-4">
-        <h3 className="font-bold text-xl text-gray-900">ENTERTAINMENT & WIFI</h3>
-        <ul className="list-disc list-inside space-y-1 pl-4">
-          <li>High-speed WiFi (Network: SeaYourBliss)</li>
-          <li>4 Smart TVs (Roku TV) for your streaming needs.</li>
-          <li>Board games and books provided for cozy family nights.</li>
-        </ul>
-      </div>
-
-      <div className="space-y-4">
-        <h3 className="font-bold text-xl text-gray-900">RESORT AMENITIES (Ocean Lakes)</h3>
-        <p>Your booking gives you access to America's favorite family campground!</p>
-        <ul className="list-disc list-inside space-y-1 pl-4">
-          <li><span className="font-bold">Water Park:</span> 4 acres of fun with slides, a lazy river, and splash zones (Free for guests!).</li>
-          <li><span className="font-bold">Activities:</span> Indoor heated pool, mini-golf, arcade, basketball courts, and a mile-long stretch of soft sandy beach.</li>
-          <li><span className="font-bold">Food & Shopping:</span> On-site grocery store, snack bars, and pizza delivery.</li>
-        </ul>
-      </div>
-
-      <div className="space-y-4">
-        <h3 className="font-bold text-xl text-gray-900">IMPORTANT NOTES</h3>
-        <ul className="list-disc list-inside space-y-1 pl-4">
-          <li><span className="font-bold">Parking:</span> Space for 2 vehicles max at the house. Parking passes are $12-$15/day/vehicle (paid directly to Ocean Lakes via Express Check-In). Overflow parking is available nearby.</li>
-          <li><span className="font-bold">House Rules:</span> Families only (primary renter must be 25+ and present). No pets, no smoking/vaping, and no parties.</li>
-        </ul>
-      </div>
-
-      <div className="space-y-4">
-        <h3 className="font-bold text-xl text-gray-900">WHY GUESTS LOVE UNIT 1459</h3>
-        <p>
-          It is the combination of the Pond Views, the Value (Free Cart + Linens included), and the Renovated Comfort. Whether you are rinsing off in the outdoor shower after a beach day or relaxing on the deck, this is the perfect home base for your ultimate beach getaway.
-        </p>
-      </div>
-
-      <div className="mt-8 pt-6 border-t border-gray-200">
-        <p className="font-bold text-xl text-cyan-800">
-          Book your stay at Mermaid Drive/Sand Dollar Dr today!
+      <div className="mt-8 pt-4 border-t border-gray-200">
+        <p className="font-bold text-lg text-cyan-800">
+          Book the comfort, value, and privacy of Unit 1459 today for your ultimate beach getaway!
         </p>
       </div>
     </div>

@@ -24,11 +24,11 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <Link to="/" className="flex items-center space-x-2 group">
-            {/* LOGO FIX: Changed path to '/the%20blessed%20frog.png' based on new information and ensured URL encoding for spaces. */}
+            {/* LOGO FIX: Increased size from h-10 to h-12 */}
             <img 
               src="/the%20blessed%20frog.png" 
               alt="The Blessed Frog Logo" 
-              className="h-10 w-auto" 
+              className="h-12 w-auto" 
             />
             
             <div className="flex flex-col">

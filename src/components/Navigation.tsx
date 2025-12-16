@@ -1,10 +1,10 @@
-import { useState } from 'react'; // <--- NEW: Import useState
+import { useState } from 'react'; 
 import { Link, useLocation } from 'react-router-dom';
-import { Waves, Home, ImageIcon, MapPin, Mail, Calendar, Menu } from 'lucide-react'; // <--- UPDATED: Imported Menu icon
+import { Home, ImageIcon, MapPin, Mail, Calendar, Menu } from 'lucide-react'; // Removed Waves, added Menu
 
 export default function Navigation() {
   const location = useLocation();
-  const [isOpen, setIsOpen] = useState(false); // <--- NEW: State for mobile menu
+  const [isOpen, setIsOpen] = useState(false); 
 
   const isActive = (path: string) => location.pathname === path;
 
@@ -15,7 +15,7 @@ export default function Navigation() {
     { path: '/contact', label: 'Contact', icon: Mail },
   ];
 
-  const toggleMenu = () => { // <--- NEW: Function to toggle menu state
+  const toggleMenu = () => { 
     setIsOpen(!isOpen);
   };
 
@@ -24,7 +24,13 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <Link to="/" className="flex items-center space-x-2 group">
-            <Waves className="h-8 w-8 text-cyan-100 group-hover:text-white transition-colors" />
+            {/* LOGO REPLACEMENT: Using image instead of Waves icon */}
+            <img 
+              src="/the blessed frog logo.png" 
+              alt="The Blessed Frog Logo" 
+              className="h-10 w-auto" 
+            />
+            
             <div className="flex flex-col">
               <span className="text-white font-bold text-xl">Coastal Corner Cottage</span>
               <span className="text-cyan-100 text-xs">Myrtle Beach, SC</span>
@@ -49,7 +55,7 @@ export default function Navigation() {
             ))}
             <Link
               to="/book"
-              className="flex items-center space-x-2 px-6 py-2 bg-orange-500 hover:bg-orange-600 text-white rounded-lg transition-all shadow-md hover:shadow-lg ml-4" // Removed the inline style for color to use Tailwind classes consistently
+              className="flex items-center space-x-2 px-6 py-2 bg-orange-500 hover:bg-orange-600 text-white rounded-lg transition-all shadow-md hover:shadow-lg ml-4" 
             >
               <Calendar className="h-5 w-5" />
               <span className="font-bold">Book Now</span>
@@ -60,11 +66,10 @@ export default function Navigation() {
           <div className="md:hidden">
             <button 
               className="text-white p-2" 
-              onClick={toggleMenu} // <--- NEW: Toggle menu on click
+              onClick={toggleMenu} 
               aria-expanded={isOpen}
               aria-controls="mobile-menu"
             >
-              {/* Using lucide-react Menu icon instead of raw SVG for consistency */}
               <Menu className="h-6 w-6" /> 
             </button>
           </div>
@@ -73,13 +78,13 @@ export default function Navigation() {
         {/* Mobile Menu Content (Hidden by default, shown by 'isOpen' state) */}
         <div 
           id="mobile-menu"
-          className={`${isOpen ? 'block' : 'hidden'} md:hidden pb-4 space-y-2`} // <--- NEW: Conditional class
+          className={`${isOpen ? 'block' : 'hidden'} md:hidden pb-4 space-y-2`} 
         >
           {navLinks.map(({ path, label, icon: Icon }) => (
             <Link
               key={path}
               to={path}
-              onClick={toggleMenu} // <--- NEW: Close menu after clicking link
+              onClick={toggleMenu} 
               className={`flex items-center space-x-2 px-4 py-3 rounded-lg transition-all ${
                 isActive(path)
                   ? 'bg-white text-cyan-700'
@@ -92,7 +97,7 @@ export default function Navigation() {
           ))}
           <Link
             to="/book"
-            onClick={toggleMenu} // <--- NEW: Close menu after clicking link
+            onClick={toggleMenu} 
             className="flex items-center space-x-2 px-4 py-3 bg-orange-500 hover:bg-orange-600 text-white rounded-lg transition-all"
           >
             <Calendar className="h-5 w-5" />

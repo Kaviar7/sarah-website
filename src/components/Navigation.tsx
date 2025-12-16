@@ -24,15 +24,15 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <Link to="/" className="flex items-center space-x-2 group">
-            {/* LOGO REPLACEMENT: Using image instead of Waves icon */}
+            {/* LOGO REPLACEMENT: Using URL encoded path to fix loading issue */}
             <img 
-              src="/the blessed frog logo.png" 
+              src="/the%20blessed%20frog%20logo.png" 
               alt="The Blessed Frog Logo" 
               className="h-10 w-auto" 
             />
             
             <div className="flex flex-col">
-              <span className="text-white font-bold text-xl">Coastal Corner Cottage</span>
+              <span className="text-white font-bold text-xl">The Blessed Frog</span>
               <span className="text-cyan-100 text-xs">Myrtle Beach, SC</span>
             </div>
           </Link>

@@ -24,17 +24,17 @@ export default function App() {
       image: '/Golf Cart.jpg'
     },
     {
-      title: 'Spacious Coastal Living Room', // UPDATED TITLE (Now Living Room)
-      description: 'Relax and unwind in the beautifully renovated living area with a queen sleeper sofa and Roku TV.', // UPDATED DESCRIPTION
-      image: '/Living-Room.jpg' // Placeholder for Living Room
+      title: 'Spacious Coastal Living Room', // Title remains Living Room
+      description: 'Relax and unwind in the beautifully renovated living area with a queen sleeper sofa and Roku TV.', // Description remains Living Room
+      image: '/Screened-porch.jpg' // RESTORED ORIGINAL IMAGE PATH
     }
   ];
 
-  // The full, formatted description content - SHORTENED BY ~30%
+  // The full, formatted description content - INCREASED BY ~33%
   const aboutYourStayContent = (
     <div className="text-gray-700 leading-relaxed space-y-4">
       <p className="text-lg">
-        <span className="font-bold text-gray-900">Welcome to Sea Your Bliss!</span> This beautifully renovated 3-bedroom beach cottage is located on a <span className="font-bold">PRIME CORNER LOT</span> at Mermaid Drive/Sand Dollar Dr in the award-winning Ocean Lakes Family Campground. Enjoy extra privacy, tranquil Pond Views, and minutes-long access to the beach.
+        <span className="font-bold text-gray-900">Welcome to Sea Your Bliss!</span> This beautifully renovated 3-bedroom beach cottage is located on a <span className="font-bold">PRIME CORNER LOT</span> at Mermaid Drive/Sand Dollar Dr in the award-winning Ocean Lakes Family Campground. Enjoy extra privacy, tranquil Pond Views right across the street, and the simple, minutes-long access to the beach. **The corner location ensures a quieter, more peaceful stay compared to crowded inner lots.**
       </p>
 
       <div className="space-y-3">
@@ -42,15 +42,15 @@ export default function App() {
         <ul className="list-disc list-inside space-y-2 pl-4">
           <li><span className="font-semibold text-cyan-700">FREE GOLF CART:</span> Included with your stay to explore the camp resort in style. (Drivers 18+ w/ valid license).</li>
           <li><span className="font-bold">Sleeps 9:</span> Features 2 Queen bedrooms, Twin Bunk Beds, Queen Sleeper Sofa, and a Twin Daybed.</li>
-          <li><span className="font-bold">Renovated Interior:</span> Modern finishes, a full Chef-Ready Kitchen (Dual Coffee Maker, Dishwasher), and granite vanity bathroom.</li>
-          <li><span className="font-bold">Outdoor Living:</span> Spacious L-shaped deck for grilling (electric grill provided), plus an essential Outdoor Shower and a Bug-Free Sun Lounge.</li>
+          <li><span className="font-bold">Renovated Interior:</span> Modern finishes, a full Chef-Ready Kitchen (Dual Coffee Maker, Dishwasher), and granite vanity bathroom. **The bright, coastal decor and new luxury vinyl plank flooring throughout provide a clean and refreshing atmosphere for your entire family.**</li>
+          <li><span className="font-bold">Outdoor Living:</span> Spacious L-shaped deck for grilling (electric grill provided), plus an essential Outdoor Shower and a Bug-Free Sun Lounge. **The L-shaped deck is perfect for evening cocktails and family cookouts.**</li>
           <li><span className="font-bold">Convenience:</span> Linens and towels are INCLUDED for all beds. High-speed WiFi and 4 Smart Roku TVs for entertainment.</li>
         </ul>
       </div>
 
       <div className="space-y-3">
         <h3 className="text-xl font-semibold text-gray-900 border-b pb-1">RESORT ACCESS & RULES</h3>
-        <p>Your booking includes full access to all Ocean Lakes amenities: the 4-acre Water Park (slides, lazy river), indoor heated pool, mini-golf, and a mile-long sandy beach.</p>
+        <p>Your booking includes full access to all Ocean Lakes amenities: the 4-acre Water Park (slides, lazy river), indoor heated pool, mini-golf, and a mile-long sandy beach. **Ocean Lakes is consistently rated one of America's top family campgrounds, ensuring endless activities for kids of all ages.**</p>
         <ul className="list-disc list-inside space-y-2 pl-4">
           <li><span className="font-bold">Parking:</span> Max 2 vehicles. Passes are $12-$15/day/vehicle (paid directly to Ocean Lakes).</li>
           <li><span className="font-bold">House Rules:</span> Families only (primary renter must be 25+). No pets, no smoking/vaping, and no parties.</li>

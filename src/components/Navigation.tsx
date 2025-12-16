@@ -24,9 +24,9 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <Link to="/" className="flex items-center space-x-2 group">
-            {/* LOGO REPLACEMENT: Using URL encoded path to fix loading issue */}
+            {/* LOGO FIX: Changed path to '/the%20blessed%20frog.png' based on new information and ensured URL encoding for spaces. */}
             <img 
-              src="/the%20blessed%20frog%20logo.png" 
+              src="/the%20blessed%20frog.png" 
               alt="The Blessed Frog Logo" 
               className="h-10 w-auto" 
             />

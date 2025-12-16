@@ -24,11 +24,12 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <Link to="/" className="flex items-center space-x-2 group">
-            {/* LOGO FIX: Increased size from h-12 to h-16 for visibility */}
+            {/* LOGO FIX: Increased size to 72px (using inline style for precision) */}
             <img 
               src="/the%20blessed%20frog.png" 
               alt="The Blessed Frog Logo" 
-              className="h-16 w-auto" 
+              className="w-auto"
+              style={{ height: '72px' }} 
             />
             
             <div className="flex flex-col">

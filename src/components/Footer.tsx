@@ -8,13 +8,14 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center space-x-2 mb-4">
-              {/* UPDATED: Using The Blessed Frog Logo instead of Waves icon */}
+              {/* UPDATED: Height set to 72px to match Navigation exactly */}
               <img 
                 src="/the%20blessed%20frog.png" 
                 alt="The Blessed Frog Logo" 
-                className="w-auto h-12" // Slightly smaller for footer balance
+                className="w-auto"
+                style={{ height: '72px' }} 
               />
-              <div>
+              <div className="flex flex-col">
                 <h3 className="font-bold text-lg leading-tight">The Blessed Frog</h3>
                 <p className="text-xs text-gray-400">Myrtle Beach, SC</p>
               </div>

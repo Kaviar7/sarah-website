@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Waves, Phone, Mail, MapPin } from 'lucide-react';
+import { Phone, Mail, MapPin } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -8,9 +8,14 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center space-x-2 mb-4">
-              <Waves className="h-8 w-8 text-cyan-400" />
+              {/* UPDATED: Using The Blessed Frog Logo instead of Waves icon */}
+              <img 
+                src="/the%20blessed%20frog.png" 
+                alt="The Blessed Frog Logo" 
+                className="w-auto h-12" // Slightly smaller for footer balance
+              />
               <div>
-                <h3 className="font-bold text-lg">Coastal Corner Cottage</h3>
+                <h3 className="font-bold text-lg leading-tight">The Blessed Frog</h3>
                 <p className="text-xs text-gray-400">Myrtle Beach, SC</p>
               </div>
             </div>
@@ -84,7 +89,7 @@ export default function Footer() {
 
         <div className="border-t border-gray-700 mt-8 pt-8 text-center">
           <p className="text-gray-400 text-sm">
-            &copy; {new Date().getFullYear()} Coastal Corner Cottage. <a href="http://www.proaimarketers.com/" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 transition-colors">Built by Pro AI Marketers</a>
+            &copy; {new Date().getFullYear()} The Blessed Frog. <a href="http://www.proaimarketers.com/" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 transition-colors">Built by Pro AI Marketers</a>
           </p>
           <p className="text-gray-500 text-xs mt-2">
             <a

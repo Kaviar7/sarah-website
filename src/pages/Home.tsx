@@ -34,7 +34,7 @@ export default function App() {
   const aboutYourStayContent = (
     <div className="text-gray-700 leading-relaxed space-y-4">
       <p className="text-lg">
-        <span className="font-bold text-gray-900">Welcome to Sea Your Bliss!</span> This beautifully renovated 3-bedroom beach cottage is located on a <span className="font-bold">PRIME CORNER LOT</span> at Mermaid Drive/Sand Dollar Dr in the award-winning Ocean Lakes Family Campground. Enjoy extra privacy, tranquil Pond Views right across the street, and the simple, minutes-long access to the beach. **The corner location ensures a quieter, more peaceful stay compared to crowded inner lots.**
+        <span className="font-bold text-gray-900">Welcome to The Blessed Frog!</span> This beautifully renovated 3-bedroom beach cottage is located on a <span className="font-bold">PRIME CORNER LOT</span> at Mermaid Drive/Sand Dollar Dr in the award-winning Ocean Lakes Family Campground. Enjoy extra privacy, tranquil Pond Views right across the street, and the simple, minutes-long access to the beach. **The corner location ensures a quieter, more peaceful stay compared to crowded inner lots.**
       </p>
 
       <div className="space-y-3">

@@ -46,7 +46,7 @@ export default function Book() {
             Book Your Stay
           </h1>
           <p className="text-xl text-gray-600">
-            Check availability and book at Coastal Corner Cottage
+            Check availability and book at The Blessed Frog
           </p>
         </div>
 

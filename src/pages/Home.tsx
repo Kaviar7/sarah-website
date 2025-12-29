@@ -113,7 +113,7 @@ export default function App() {
             </div>
             <div className="flex flex-col items-center">
               <MapPin className="h-12 w-12 text-cyan-600 mb-3" />
-              <h3 className="text-2xl font-bold text-gray-800">Oceanside Village</h3>
+              <h3 className="text-2xl font-bold text-gray-800">Ocean Lakes</h3>
               <p className="text-gray-600">Prime location</p>
             </div>
             <div className="flex flex-col items-center">
@@ -178,7 +178,7 @@ export default function App() {
         <div className="bg-gradient-to-r from-cyan-600 to-blue-700 rounded-2xl shadow-xl p-12 text-center text-white">
           <h2 className="text-4xl font-bold mb-4">Ready for Your Beach Vacation?</h2>
           <p className="text-xl mb-8 text-cyan-100">
-            Book your stay at Coastal Corner Cottage today and create unforgettable memories!
+            Book your stay at The Blessed Frog today and create unforgettable memories!
           </p>
           <Link
             to="/book"

@@ -2,13 +2,13 @@ import { MapPin, Utensils, Waves, PartyPopper, TreePine, Ship, Palmtree, GlassWa
 
 const attractions = [
   {
-    category: 'Oceanside Village Amenities',
+    category: 'Ocean Lakes Amenities',
     icon: Palmtree,
     items: [
       {
         name: 'Private Beach Access',
         distance: 'Golf cart ride',
-        description: 'Gated oceanfront parking lot with direct beach access, outdoor showers, and restrooms exclusively for Oceanside Village residents.',
+        description: 'Gated oceanfront parking lot with direct beach access, outdoor showers, and restrooms exclusively for Ocean Lakes residents.',
         url: null
       },
       {
@@ -170,7 +170,7 @@ const attractions = [
       {
         name: 'Tennis & Basketball Courts',
         distance: 'On-site',
-        description: 'Two lighted tennis courts, basketball, volleyball, and baseball fields available within Oceanside Village.',
+        description: 'Two lighted tennis courts, basketball, volleyball, and baseball fields available within Ocean Lakes.',
         url: null
       },
       {
@@ -192,7 +192,7 @@ export default function Nearby() {
             Cool Things Nearby
           </h1>
           <p className="text-xl text-gray-600">
-            Discover the best of Myrtle Beach from your coastal cottage
+            Discover the best of Myrtle Beach from The Blessed Frog
           </p>
         </div>
 
@@ -201,13 +201,13 @@ export default function Nearby() {
             <MapPin className="h-8 w-8 text-cyan-600 flex-shrink-0 mt-1" />
             <div>
               <h2 className="text-2xl font-bold text-gray-800 mb-2">
-                Prime Location in Oceanside Village
+                Prime Location in Ocean Lakes
               </h2>
               <p className="text-gray-700 leading-relaxed mb-4">
-                Your Coastal Corner Cottage is perfectly situated in Oceanside Village, a 180-acre oceanfront golf cart community in Surfside Beach. Just a few minutes by golf cart to the beautiful Atlantic Ocean, with private beach access and year-round resort amenities. Explore the community and venture out to nearby Myrtle Beach attractions.
+                The Blessed Frog is perfectly situated in Ocean Lakes, a 180-acre oceanfront golf cart community in Surfside Beach. Just a few minutes by golf cart to the beautiful Atlantic Ocean, with private beach access and year-round resort amenities. Explore the community and venture out to nearby Myrtle Beach attractions.
               </p>
               <div className="text-sm text-gray-600">
-                <p className="font-semibold mb-1">Oceanside Village</p>
+                <p className="font-semibold mb-1">Ocean Lakes</p>
                 <p>1711 Highway 17 South, Surfside Beach, SC 29575</p>
               </div>
             </div>

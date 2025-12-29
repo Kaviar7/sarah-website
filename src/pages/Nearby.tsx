@@ -2,7 +2,7 @@ import { MapPin, Utensils, Waves, PartyPopper, TreePine, Ship, Palmtree, GlassWa
 
 const attractions = [
   {
-    category: 'Ocean Lakes Amenities',
+    category: 'Oceanside Village Amenities',
     icon: Palmtree,
     items: [
       {

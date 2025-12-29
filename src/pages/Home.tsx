@@ -174,7 +174,7 @@ export default function App() {
         <div className="bg-gradient-to-r from-cyan-600 to-blue-700 rounded-2xl shadow-xl p-12 text-center text-white">
           <h2 className="text-4xl font-bold mb-4">Ready for Your Beach Vacation?</h2>
           <p className="text-xl mb-8 text-cyan-100">
-            Book your stay at Coastal Corner Cottage today and create unforgettable memories!
+            Book your stay at The Blessed Frog today and create unforgettable memories!
           </p>
           <Link
             to="/book"

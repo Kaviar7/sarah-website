@@ -8,7 +8,6 @@ const propertyPhotos = [
 
   // --- EXACT ORDERED LIST (34 IMAGES) ---
   // EXTERIOR & LIVING AREAS
-  { url: '/Home.jpg', category: 'Area', alt: 'Main Home Exterior View' }, // 2
   { url: '/Ocean View.jpeg', category: 'Area', alt: 'Ocean View' }, // 3
   { url: '/Living Room.jpg', category: 'Living Room', alt: 'Living Room' }, // 4
   { url: '/Screened-porch.jpg', category: 'Interior', alt: 'Screened Porch' }, // 5

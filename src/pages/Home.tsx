@@ -1,10 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Waves, Wifi, Car, Tv, UtensilsCrossed, Bath, Bed, Users, MapPin, Star } from 'lucide-react';
+import { Waves, Wifi, Tv, UtensilsCrossed, Bath, Bed, Users, MapPin, Star } from 'lucide-react';
 
 export default function App() {
   const amenities = [
-    { icon: Car, label: 'Free Golf Cart' },
     { icon: Wifi, label: 'High-Speed WiFi' },
     { icon: Tv, label: 'Smart TV' },
     { icon: UtensilsCrossed, label: 'Full Kitchen' },
@@ -17,11 +16,6 @@ export default function App() {
       title: 'Steps to the Beach',
       description: 'Walk to the beautiful Myrtle Beach oceanfront in minutes',
       image: '/Myrtle-Beach-Beachline.jpeg'
-    },
-    {
-      title: 'Complimentary Golf Cart',
-      description: 'Explore Ocean Lakes in style with your free golf cart',
-      image: '/Golf Cart.jpg'
     },
     {
       title: 'Spacious Coastal Living Room',
@@ -40,7 +34,6 @@ export default function App() {
       <div className="space-y-3">
         <h3 className="text-xl font-semibold text-gray-900 border-b pb-1">KEY FEATURES & COMFORT</h3>
         <ul className="list-disc list-inside space-y-2 pl-4">
-          <li><span className="font-semibold text-cyan-700">FREE GOLF CART:</span> Included with your stay to explore the camp resort in style. (Drivers 18+ w/ valid license).</li>
           <li><span className="font-bold">Sleeps 9:</span> Features 2 Queen bedrooms, Twin Bunk Beds, Queen Sleeper Sofa, and a Twin Daybed.</li>
           <li><span className="font-bold">Renovated Interior:</span> Modern finishes, a full Chef-Ready Kitchen (Dual Coffee Maker, Dishwasher), and granite vanity bathroom. The bright, coastal decor and new luxury vinyl plank flooring throughout provide a clean and refreshing atmosphere for your entire family.</li>
           <li><span className="font-bold">Outdoor Living:</span> Spacious L-shaped deck for grilling (electric grill provided), plus an essential Outdoor Shower and a Bug-Free Sun Lounge. The L-shaped deck is perfect for evening cocktails and family cookouts.</li>
@@ -78,7 +71,7 @@ export default function App() {
             Steps to Beach!
           </h1>
           <h2 className="text-3xl md:text-4xl font-semibold mb-4 text-cyan-100">
-            Coastal Corner Cottage with Golf Cart
+            Coastal Corner Cottage
           </h2>
           <p className="text-xl md:text-2xl mb-8 text-gray-100">
             Your perfect beach getaway in Myrtle Beach, South Carolina
@@ -134,7 +127,7 @@ export default function App() {
           <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">
             Property Highlights
           </h2>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 gap-8">
             {highlights.map((highlight, index) => (
               <div key={index} className="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-shadow">
                 <img

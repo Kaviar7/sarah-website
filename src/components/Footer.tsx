@@ -9,11 +9,11 @@ export default function Footer() {
           <div>
             <div className="flex items-center space-x-2 mb-4">
               {/* UPDATED: Height set to 72px to match Navigation exactly */}
-              <img 
-                src="/the%20blessed%20frog.png" 
-                alt="The Blessed Frog Logo" 
+              <img
+                src="/the%20blessed%20frog.png"
+                alt="The Blessed Frog Logo"
                 className="w-auto"
-                style={{ height: '72px' }} 
+                style={{ height: '72px' }}
               />
               <div className="flex flex-col">
                 <h3 className="font-bold text-lg leading-tight">The Blessed Frog</h3>
@@ -59,7 +59,6 @@ export default function Footer() {
           <div>
             <h4 className="font-bold text-lg mb-4">Property Features</h4>
             <ul className="space-y-2 text-gray-400 text-sm">
-              <li>• Free Golf Cart</li>
               <li>• Screened Porch</li>
               <li>• Outdoor Shower</li>
               <li>• Full Kitchen</li>

@@ -21,7 +21,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-gray-400 text-sm">
-              Your perfect beach getaway with complimentary golf cart, just steps from the ocean.
+              Your perfect beach getaway just steps from the ocean.
             </p>
           </div>
 
